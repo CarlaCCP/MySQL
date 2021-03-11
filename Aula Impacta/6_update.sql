@@ -1,7 +1,7 @@
 use empresa;
 show tables;
 #Por segurança update e delete devem identificar a chave primária
-#em algumas versões do mySQL, esta não está configurada
+#equando o safe update está acionado
 
 select * from clientes;
 
