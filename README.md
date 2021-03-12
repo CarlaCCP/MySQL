@@ -48,3 +48,17 @@ Terminologia de um banco de dados
   - DateTime: Combinação de data e hora. A margem de valores vai desde 1 de janeiro de 1001 à 0:00:00 até 31 de dezembro de 9999 23:59:59. Formato: YYYY-MM-DD HH:MM:SS.
   - Time: Armazena hora. HH:MM:SS
   - Year: O campo pode ter tamanho de 2 ou tamanho de 4.
+
+**Restrições** - Principais constraints
+
+- Not null
+- Default
+- Unique
+- Primary key
+- Foreign key
+
+**Modelo entidade relacionamento**
+
+- N...N
+
+  Quando tabelas têm entre si relacionamentos n..n é necessário criar uma nova tabela com as chaves primárias das tabelas envolvidas, criando assim uma chave composta, ou seja, formada por diversos campos-chave de outras tabelas. O relacionamento então se reduz para um relacionamento 1..n, sendo que o lado n ficará com a nova tabela criada. 

@@ -3,6 +3,7 @@
 show databases;
 create database if not exists empresa;
 use empresa;
+show databases; 
 create table clientes (
 	idCliente int not null,
     nomeCliente varchar(65) not null,
