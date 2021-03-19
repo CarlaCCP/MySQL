@@ -1,6 +1,8 @@
+create database relacionamentos;
 use relacionamentos;
 drop table conjunge;
 drop table funcionarios;
+drop database relacionamentos;
 
 create table funcionarios (
 	fun_id int auto_increment,
@@ -32,3 +34,4 @@ create table cargos (
 );
 
 insert into cargos (car_nome) values ("Jornalista"), ("Programador full stack"), ("Back end"), ("Front-end");
+insert into cargos (car_nome) values ("Escritor"),("Arquiteto");
