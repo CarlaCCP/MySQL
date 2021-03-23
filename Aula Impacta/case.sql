@@ -1,3 +1,4 @@
+-- Estrutura de controle
 use relacionamentos;
 select * from funcionarios;
 
@@ -11,7 +12,6 @@ select fun_nome as "Funcionarios",
 from funcionarios;
 
 -- quando o valor for null
-
 select 
 		fun_nome as "Funcionario",
 		case
@@ -20,6 +20,21 @@ select
         end as "Cargo"
         from 
 	funcionarios f
+left join 
+	cargos c on 
+    f.car_id = c.car_id;
+
+
+-- Faixa de valores
+select 
+		fun_nome as "Funcionario",
+        
+		case
+        when fun_salario >= 3000 then "Não informado"
+        else fun_salario
+        end as "Salarios"
+        from 
+		funcionarios f
 left join 
 	cargos c on 
     f.car_id = c.car_id;
